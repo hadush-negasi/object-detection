@@ -95,7 +95,6 @@ notebook==6.1.4
 numpy==1.23.5
 oauth2client==4.1.3
 oauthlib==3.3.1
-object-detection @ file:///C:/Users/hadus/Documents/ObjectDetection/models/research
 objsize==0.6.1
 opencv-python==4.12.0.88
 opencv-python-headless==4.12.0.88
