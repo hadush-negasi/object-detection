@@ -1,0 +1,39 @@
+# === Python cache ===
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual environments ===
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+objectdetectionenv/
+
+# === Jupyter notebook stuff ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === TensorFlow training artifacts ===
+**/checkpoint/
+**/*.index
+**/*.data-*
+*.ckpt
+*.pbtxt
+
+# === Model logs or artifacts ===
+logs/
+events.out.tfevents.*
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === IDE / Editor folders ===
+.vscode/
+.idea/
+
+# === Streamlit specific ===
+.streamlit/config.toml
