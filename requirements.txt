@@ -1,36 +1,13 @@
-# Core requirements
-streamlit==1.18.1
+# CORE
+streamlit==1.32.2
 numpy==1.23.5
-opencv-python-headless==4.9.0.80  # Lighter headless version
-Pillow==9.5.0
-protobuf==3.19.6
+opencv-python-headless==4.8.0.74
 
-# Core TensorFlow packages
-tensorflow==2.2.0
-tensorflow-estimator==2.2.0
-tensorboard==2.2.0
+# TENSORFLOW (pre-built)
+tensorflow-cpu==2.10.1
+tf-models-official==2.10.1 --no-deps  # Prevent dependency conflicts
+protobuf==3.20.3
 
-# Compatible Object Detection API version
-tf-models-official==2.2.0  # Contains object_detection module
-
-pip>=25.0.1
-pyyaml==5.4.1  # Pre-built wheel version
-
-# Required dependencies
-absl-py==1.4.0
-astunparse==1.6.3
-flatbuffers==25.2.10
-gast==0.3.3
-google-api-core==2.25.1
-google-auth==2.40.3
-grpcio==1.70.0
-h5py==2.10.0
-keras==2.10.0
-Keras-Preprocessing==1.1.2
-Markdown==3.7
-opt_einsum==3.4.0
-six==1.17.0
-termcolor==2.4.0
-typing_extensions==4.13.2
-Werkzeug==3.0.6
-wrapt==1.17.2
+# OPTIONAL (add only if your app uses these)
+# pandas==2.0.3
+# pillow==10.0.0
