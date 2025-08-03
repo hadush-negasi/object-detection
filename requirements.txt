@@ -1,12 +1,7 @@
 # Core packages (MUST be in this order)
 pip>=25.0.1
-protobuf==3.20.3  # Force this version first
-
-# Streamlit with compatible protobuf
-streamlit==1.32.2
+protobuf==3.19.6  # Force this version first
 
 # TensorFlow with pinned dependencies
-tensorflow-cpu==2.10.1
-tf-models-official==2.10.1
-numpy==1.23.5
-opencv-python-headless==4.8.0.74
+tensorflow==2.10.1
+streamlit==1.18.1
