@@ -1,13 +1,15 @@
-# CORE
+# MUST be first line to upgrade pip
+pip>=25.0.1
+
+# Core packages
 streamlit==1.32.2
 numpy==1.23.5
-opencv-python-headless==4.8.0.74
-
-# TENSORFLOW (pre-built)
-tensorflow-cpu==2.10.1
-tf-models-official==2.10.1 --no-deps  # Prevent dependency conflicts
 protobuf==3.20.3
 
-# OPTIONAL (add only if your app uses these)
-# pandas==2.0.3
-# pillow==10.0.0
+# TensorFlow (pre-built wheels)
+tensorflow-cpu==2.10.1
+tf-models-official==2.10.1  # Remove --no-deps
+
+# Object Detection dependencies
+opencv-python-headless==4.8.0.74
+pillow==10.0.0
