@@ -2,6 +2,27 @@
 
 This is a real-time object detection app built with [Streamlit](https://streamlit.io/) and [TensorFlow 2](https://www.tensorflow.org/). It supports detection from images, videos, and live webcam input using the **SSD MobileNet V2 FPNLite 320x320** model from TensorFlow Model Zoo.
 
+## 📂 Project Structure
+
+```text
+object-detection-app/
+├── app.py                  # Main Streamlit UI
+├── model_utils/            # Detection handlers
+│   ├── image_model.py
+│   ├── video_model.py
+│   └── live_model.py
+├── utils/                  # Helpers
+│   ├── helpers.py
+│   └── download_model.py
+├── models/                 # Saved models
+│   └── ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/
+│       ├── saved_model/
+│       └── mscoco_label_map.pbtxt
+├── test_media/             # Test files
+│   ├── test_image.jpg
+│   └── test_video.mp4
+├── requirements.txt        # Dependencies
+└── README.md
 ---
 
 ## 📦 Features
@@ -13,36 +34,6 @@ This is a real-time object detection app built with [Streamlit](https://streamli
 - 🧠 Powered by TensorFlow's pre-trained `saved_model`
 
 ---
-
-## 🖼️ Demo
-
-> Coming soon: [Streamlit Cloud Deployment Link](https://share.streamlit.io/...) 🔗
-
-
-📂 **Project Structure**
-object-detection-app/
-├── app.py                  # Main Streamlit UI
-│
-├── model_utils/            # Handlers for image, video, and live detection
-│   ├── image_model.py
-│   ├── video_model.py
-│   └── live_model.py
-│
-├── utils/                  # Shared helper functions
-│   ├── helpers.py
-│   └── download_model.py
-│
-├── models/                 # Saved models
-│   └── ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/
-│       ├── saved_model/
-│       └── mscoco_label_map.pbtxt
-│
-├── test_media/             # Sample media files for testing
-│   ├── test_image.jpg
-│   └── test_video.mp4
-│
-├── requirements.txt        # Project dependencies
-└── README.md
 
 ## 🚀 Installation & Running Locally
 
