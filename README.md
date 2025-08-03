@@ -21,35 +21,7 @@ This is a real-time object detection app built with [Streamlit](https://streamli
 ---
 
 ## 🔧 Project Structure
-
-<pre>
-    object-detection-app/
-    │
-    ├── app.py # Main Streamlit UI
-    │
-    ├── model_utils/ # Handlers for image, video, and live detection
-    │ ├── image_model.py
-    │ ├── video_model.py
-    │ └── live_model.py
-    │
-    ├── utils/ # Shared helper functions
-    │ ├── helpers.py
-    │ └── download_model.py
-    │
-    ├── models/ # Saved models
-    │ └── ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/
-    │ ├── saved_model/
-    │ └── mscoco_label_map.pbtxt
-    │
-    ├── test_media/ # Sample media files for testing
-    │ ├── test_image.jpg
-    │ └── test_video.mp4
-    │
-    ├── requirements.txt # Project dependencies
-    └── README.md
-</pre>
-
-
+<pre> ```text object_detection_app/ ├── app.py # Main Streamlit UI │ ├── model_utils/ # Handlers for image, video, and live detection │ ├── image_model.py │ ├── video_model.py │ └── live_model.py │ ├── utils/ # Shared helper functions │ ├── helpers.py │ └── download_model.py │ ├── models/ # Saved models │ └── ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/ │ ├── saved_model/ │ └── mscoco_label_map.pbtxt │ ├── test_media/ # Sample media files for testing │ ├── test_image.jpg │ └── test_video.mp4 │ ├── requirements.txt # Project dependencies └── README.md ``` </pre>
 ---
 
 ## 🚀 Installation & Running Locally
