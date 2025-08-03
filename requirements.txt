@@ -13,6 +13,9 @@ tensorboard==2.2.0
 # Compatible Object Detection API version
 tf-models-official==2.2.0  # Contains object_detection module
 
+pip>=25.0.1
+pyyaml==5.4.1  # Pre-built wheel version
+
 # Required dependencies
 absl-py==1.4.0
 astunparse==1.6.3
