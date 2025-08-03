@@ -5,3 +5,4 @@ protobuf==3.19.6  # Force this version first
 # TensorFlow with pinned dependencies
 tensorflow==2.10.1
 streamlit==1.18.1
+altair==4.2.2
