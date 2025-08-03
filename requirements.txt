@@ -74,7 +74,7 @@ Keras-Preprocessing==1.1.2
 kiwisolver==1.4.7
 libclang==18.1.1
 lvis==0.5.3
-lxml==6.0.0
+lxml==4.9.3
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
