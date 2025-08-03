@@ -5,11 +5,13 @@ opencv-python-headless==4.9.0.80  # Lighter headless version
 Pillow==9.5.0
 protobuf==3.19.6
 
-# TensorFlow and Object Detection API
-tensorflow==2.10.1
-tensorflow-estimator==2.10.0
-tensorboard==2.10.1
-tf-models-official==2.10.1  # Contains object_detection module
+# Core TensorFlow packages
+tensorflow==2.2.0
+tensorflow-estimator==2.2.0
+tensorboard==2.2.0
+
+# Compatible Object Detection API version
+tf-models-official==2.2.0  # Contains object_detection module
 
 # Required dependencies
 absl-py==1.4.0
