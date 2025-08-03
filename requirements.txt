@@ -27,7 +27,6 @@ contextlib2==21.6.0
 contourpy==1.1.1
 crcmod==1.7
 cycler==0.12.1
-Cython==3.1.2
 debugpy==1.8.15
 decorator==5.2.1
 defusedxml==0.7.1
@@ -121,7 +120,6 @@ py-cpuinfo==9.0.0
 pyarrow==9.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
-pycocotools @ git+https://github.com/philferriere/cocoapi.git@2929bd2ef6b451054755dfd7ceb09278f935f7ad#subdirectory=PythonAPI
 pycparser==2.22
 pydeck==0.9.1
 pydot==1.4.2
