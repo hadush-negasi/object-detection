@@ -19,7 +19,7 @@ This is a real-time object detection app built with [Streamlit](https://streamli
 > Coming soon: [Streamlit Cloud Deployment Link](https://share.streamlit.io/...) 🔗
 
 
-📂 Project Structure
+📂 **Project Structure**
 object-detection-app/
 ├── app.py                  # Main Streamlit UI
 │
@@ -43,7 +43,6 @@ object-detection-app/
 │
 ├── requirements.txt        # Project dependencies
 └── README.md
-
 
 ## 🚀 Installation & Running Locally
 
