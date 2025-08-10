@@ -6,13 +6,16 @@ from pathlib import Path
 from utils.model_loader import load_model_and_labels
 from utils.drawing import draw_boxes
 
-model, category_index = load_model_and_labels()
+# load the model once when app starts
+model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
+model, category_index = load_model_and_labels(model_path)
+
+
 
 def run():
     st.header("📷 Live Webcam Detection")
 
     run_webcam = st.checkbox("Start Webcam")
-
     if run_webcam:
         cap = cv2.VideoCapture(0)
         stframe = st.empty()

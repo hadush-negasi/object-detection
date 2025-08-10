@@ -10,7 +10,7 @@ env/
 venv/
 ENV/
 env.bak/
-objectdetectionenv/
+testenv/
 
 # === Jupyter notebook stuff ===
 .ipynb_checkpoints/
