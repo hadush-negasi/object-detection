@@ -6,7 +6,7 @@ from utils.model_loader import load_model_and_labels
 from utils.drawing import draw_boxes
 
 # Load the model once
-model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
+model_path = "models/faster_rcnn_resnet101_v1_1024x1024_coco17_tpu-8"
 model, category_index = load_model_and_labels(model_path)
 
 def run():
