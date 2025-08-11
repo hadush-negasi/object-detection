@@ -3,16 +3,17 @@ import cv2
 import tempfile
 import tensorflow as tf
 import numpy as np
-from utils.model_loader import load_model_and_labels
+from utils.model_loader import model, category_index
 from utils.drawing import draw_boxes
+
+#model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
+#model, category_index = load_model_and_labels(model_path)
 
 def run():
     st.subheader("🎥 Object Detection on Video")
 
     uploaded_file = st.file_uploader("Upload a Video", type=["mp4", "avi", "mov"])
     if uploaded_file:
-        model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
-        model, category_index = load_model_and_labels(model_path)
         tfile = tempfile.NamedTemporaryFile(delete=False)
         tfile.write(uploaded_file.read())
 
