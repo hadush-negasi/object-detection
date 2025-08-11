@@ -4,7 +4,6 @@ from pathlib import Path
 from object_detection.utils import label_map_util
 
 # Cache the TensorFlow model (st.cache_resource)
-@st.cache_resource
 def load_model(model_path):
     model_dir = Path(model_path)
     return tf.saved_model.load(str(model_dir / "saved_model"))
