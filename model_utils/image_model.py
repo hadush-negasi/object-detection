@@ -14,7 +14,7 @@ def run():
 
     if uploaded_file:
         # Load the model once
-        model_path = "models/efficientdet_d1_coco17_tpu-32"
+        model_path = "models/efficientdet_d4_coco17_tpu-32"
         model, category_index = load_model_and_labels(model_path)
         file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         image_np = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
