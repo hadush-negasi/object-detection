@@ -38,6 +38,9 @@ def run():
             "video": {"width": OUTPUT_WIDTH, "height": OUTPUT_HEIGHT},
             "audio": False  # disable audio capture
         },
+        rtc_configuration={
+            "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+        },
         async_processing=True,  # optional: can improve performance
         # optionally you can add desired video_frame_callback_fps to limit FPS
     )
