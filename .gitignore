@@ -21,7 +21,6 @@ testenv/
 **/*.index
 **/*.data-*
 *.ckpt
-*.pbtxt
 
 # === Model logs or artifacts ===
 logs/
