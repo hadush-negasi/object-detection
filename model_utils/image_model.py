@@ -5,9 +5,7 @@ import cv2
 from utils.model_loader import load_model_and_labels
 from utils.drawing import draw_boxes
 
-# Load the model once
-model_path = "models/efficientdet_d4_coco17_tpu-32"
-model, category_index = load_model_and_labels(model_path)
+
 
 def run():
     st.subheader("🔍 Object Detection on Image")
@@ -15,6 +13,9 @@ def run():
     uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
     if uploaded_file:
+        # Load the model once
+        model_path = "models/efficientdet_d1_coco17_tpu-32"
+        model, category_index = load_model_and_labels(model_path)
         file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         image_np = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
         with st.spinner("Processing image..."):
