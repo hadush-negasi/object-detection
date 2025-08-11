@@ -6,7 +6,7 @@ from utils.model_loader import load_model_and_labels
 from utils.drawing import draw_boxes
 
 # Load the model once
-model_path = "models/efficientdet_d1_coco17_tpu-32"
+model_path = "models/efficientdet_d4_coco17_tpu-32"
 model, category_index = load_model_and_labels(model_path)
 
 def run():
