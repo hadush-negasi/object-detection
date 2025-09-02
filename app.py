@@ -55,3 +55,4 @@ elif selected == "Live Webcam":
 
 elif selected == "About":
     about.run()
+
