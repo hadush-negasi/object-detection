@@ -4,10 +4,11 @@ from pathlib import Path
 from object_detection.utils import label_map_util
 
 # Cache the TensorFlow model (st.cache_resource)
-model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
+SSD_PATH = "src/models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
+FASTER_RCNN_PATH = "src/models/faster_rcnn_resnet101_v1_1024x1024_coco17_tpu-8"
 
-def load_model(model_path):
-    model_dir = Path(model_path)
+def load_model(path):
+    model_dir = Path(path)
     return tf.saved_model.load(str(model_dir / "saved_model"))
 
 # Cache the label map (st.cache_data)
@@ -17,17 +18,18 @@ def load_labels(label_path):
         str(label_path), use_display_name=True)
 
 # Combined loader (uses cached sub-functions)
-def load_model_and_labels(model_path):
-    model = load_model(model_path)
-    label_path = Path(model_path) / "mscoco_label_map.pbtxt"
+@st.cache_resource
+def load_model_and_labels(path):
+    model = load_model(path)
+    label_path = Path(path) / "mscoco_label_map.pbtxt"
     category_index = load_labels(label_path)
     return model, category_index
 
-@st.cache_resource
-def get_model():
-    """Load the model once and share it across all files & sessions."""
-    print(f"Loading model from {model_path} ...")
-    return load_model_and_labels(model_path)
+faster_rcnn_model, faster_rcnn_label = load_model_and_labels(FASTER_RCNN_PATH)
+ssd_model, ssd_label = load_model_and_labels(SSD_PATH)
 
-# This will be the shared model & labels
-model, category_index = get_model()
+def get_model(task: str = "image"):
+    if task == "image":
+        return faster_rcnn_model, faster_rcnn_label
+    else:
+        return ssd_model, ssd_label
