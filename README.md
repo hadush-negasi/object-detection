@@ -9,15 +9,8 @@ You can try the live object detection demo directly in your browser via Hugging 
 ---
 ## 💻 Source Code
 
-The full source code for the Space is publicly available:
-
-[**📂 Hugging Face Repository**](https://huggingface.co/spaces/hadush7501/object-detection-app/tree/main)
-
-- `app.py` – main entry point of the app  
-- `utils/` – helper modules for model loading, drawing bounding boxes, etc.  
-- `requirements.txt` – Python dependencies for running the app  
-- `.streamlit/secrets.toml` – used for storing API keys like Twilio credentials (not included in repo)  
-
+The full source code for the Space is publicly available: [**📂 Hugging Face Repository**](https://huggingface.co/spaces/hadush7501/object-detection-app/tree/main)
+ 
 ## 📂 Project Structure
 
 ```text
