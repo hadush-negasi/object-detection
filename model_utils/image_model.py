@@ -2,12 +2,11 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import cv2
-from utils.model_loader import model, category_index
+from utils.model_loader import get_model
 from utils.drawing import draw_boxes
 
 # Load the model once
-#model_path = "models/ssd_mobilenet_v2_320x320_coco17_tpu-8"
-#model, category_index = load_model_and_labels(model_path)
+model, category_index = get_model("image") # Faster RCNN model
 
 def run():
     st.subheader("🔍 Object Detection on Image")
