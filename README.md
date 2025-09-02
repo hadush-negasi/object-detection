@@ -2,6 +2,22 @@
 
 This is a real-time object detection app built with [Streamlit](https://streamlit.io/) and [TensorFlow 2](https://www.tensorflow.org/). It supports detection from images, videos, and live webcam input using the **SSD MobileNet V2 FPNLite 320x320** model from TensorFlow Model Zoo.
 
+## 🔥 Live Demo
+
+You can try the live object detection demo directly in your browser via Hugging Face Spaces: [**🎥 Live Demo on Hugging Face**](https://hadush7501-object-detection-app.hf.space/)
+
+---
+## 💻 Source Code
+
+The full source code for the Space is publicly available:
+
+[**📂 Hugging Face Repository**](https://huggingface.co/spaces/hadush7501/object-detection-app/tree/main)
+
+- `app.py` – main entry point of the app  
+- `utils/` – helper modules for model loading, drawing bounding boxes, etc.  
+- `requirements.txt` – Python dependencies for running the app  
+- `.streamlit/secrets.toml` – used for storing API keys like Twilio credentials (not included in repo)  
+
 ## 📂 Project Structure
 
 ```text
